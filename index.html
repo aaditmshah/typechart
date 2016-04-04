@@ -237,9 +237,10 @@
         </style>
     </head>
     <body>
+        <a id="add-type" class="type-icon-th" style="cursor: pointer;">Add Type</a>
         <table class="type-table">
             <thead>
-                <tr>
+                <tr id="typechart-head">
                     <th class="cell-nano">DEFENSE&nbsp;&#8594;<br/>ATTACK&nbsp;&#8628;</th>
                     <th>
                         <a class="type-abbr type-normal">Nor</a>
@@ -297,8 +298,8 @@
                     </th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
+            <tbody id="typechart-body">
+                <tr id="Normal">
                     <th>
                         <a class="type-icon-th type-normal">Normal</a>
                     </th>
@@ -321,7 +322,7 @@
                     <td id="Normal → Steel"    class="type-fx-cell type-fx-50">½</td>
                     <td id="Normal → Fairy"    class="type-fx-cell type-fx-100"></td>
                 </tr>
-                <tr>
+                <tr id="Fire">
                     <th>
                         <a class="type-icon-th type-fire">Fire</a>
                     </th>
@@ -344,7 +345,7 @@
                     <td id="Fire → Steel"    class="type-fx-cell type-fx-200">2</td>
                     <td id="Fire → Fairy"    class="type-fx-cell type-fx-100"></td>
                 </tr>
-                <tr>
+                <tr id="Water">
                     <th>
                         <a class="type-icon-th type-water">Water</a>
                     </th>
@@ -367,7 +368,7 @@
                     <td id="Water → Steel"    class="type-fx-cell type-fx-100"></td>
                     <td id="Water → Fairy"    class="type-fx-cell type-fx-100"></td>
                 </tr>
-                <tr>
+                <tr id="Electric">
                     <th>
                         <a class="type-icon-th type-electric">Electric</a>
                     </th>
@@ -390,7 +391,7 @@
                     <td id="Electric → Steel"    class="type-fx-cell type-fx-100"></td>
                     <td id="Electric → Fairy"    class="type-fx-cell type-fx-100"></td>
                 </tr>
-                <tr>
+                <tr id="Grass">
                     <th>
                         <a class="type-icon-th type-grass">Grass</a>
                     </th>
@@ -413,7 +414,7 @@
                     <td id="Grass → Steel"    class="type-fx-cell type-fx-50">½</td>
                     <td id="Grass → Fairy"    class="type-fx-cell type-fx-100"></td>
                 </tr>
-                <tr>
+                <tr id="Ice">
                     <th>
                         <a class="type-icon-th type-ice">Ice</a>
                     </th>
@@ -436,7 +437,7 @@
                     <td id="Ice → Steel"    class="type-fx-cell type-fx-50">½</td>
                     <td id="Ice → Fairy"    class="type-fx-cell type-fx-100"></td>
                 </tr>
-                <tr>
+                <tr id="Fighting">
                     <th>
                         <a class="type-icon-th type-fighting">Fighting</a>
                     </th>
@@ -459,7 +460,7 @@
                     <td id="Fighting → Steel"    class="type-fx-cell type-fx-200">2</td>
                     <td id="Fighting → Fairy"    class="type-fx-cell type-fx-50">½</td>
                 </tr>
-                <tr>
+                <tr id="Poison">
                     <th>
                         <a class="type-icon-th type-poison">Poison</a>
                     </th>
@@ -482,7 +483,7 @@
                     <td id="Poison → Steel"    class="type-fx-cell type-fx-0">0</td>
                     <td id="Poison → Fairy"    class="type-fx-cell type-fx-200">2</td>
                 </tr>
-                <tr>
+                <tr id="Ground">
                     <th>
                         <a class="type-icon-th type-ground">Ground</a>
                     </th>
@@ -505,7 +506,7 @@
                     <td id="Ground → Steel"    class="type-fx-cell type-fx-200">2</td>
                     <td id="Ground → Fairy"    class="type-fx-cell type-fx-100"></td>
                 </tr>
-                <tr>
+                <tr id="Flying">
                     <th>
                         <a class="type-icon-th type-flying">Flying</a>
                     </th>
@@ -528,7 +529,7 @@
                     <td id="Flying → Steel"    class="type-fx-cell type-fx-50">½</td>
                     <td id="Flying → Fairy"    class="type-fx-cell type-fx-100"></td>
                 </tr>
-                <tr>
+                <tr id="Psychic">
                     <th>
                         <a class="type-icon-th type-psychic">Psychic</a>
                     </th>
@@ -551,7 +552,7 @@
                     <td id="Psychic → Steel"    class="type-fx-cell type-fx-50">½</td>
                     <td id="Psychic → Fairy"    class="type-fx-cell type-fx-100"></td>
                 </tr>
-                <tr>
+                <tr id="Bug">
                     <th>
                         <a class="type-icon-th type-bug">Bug</a>
                     </th>
@@ -574,7 +575,7 @@
                     <td id="Bug → Steel"    class="type-fx-cell type-fx-50">½</td>
                     <td id="Bug → Fairy"    class="type-fx-cell type-fx-50">½</td>
                 </tr>
-                <tr>
+                <tr id="Rock">
                     <th>
                         <a class="type-icon-th type-rock">Rock</a>
                     </th>
@@ -597,7 +598,7 @@
                     <td id="Rock → Steel"    class="type-fx-cell type-fx-50">½</td>
                     <td id="Rock → Fairy"    class="type-fx-cell type-fx-100"></td>
                 </tr>
-                <tr>
+                <tr id="Ghost">
                     <th>
                         <a class="type-icon-th type-ghost">Ghost</a>
                     </th>
@@ -620,7 +621,7 @@
                     <td id="Ghost → Steel"    class="type-fx-cell type-fx-100"></td>
                     <td id="Ghost → Fairy"    class="type-fx-cell type-fx-100"></td>
                 </tr>
-                <tr>
+                <tr id="Dragon">
                     <th>
                         <a class="type-icon-th type-dragon">Dragon</a>
                     </th>
@@ -643,7 +644,7 @@
                     <td id="Dragon → Steel"    class="type-fx-cell type-fx-50">½</td>
                     <td id="Dragon → Fairy"    class="type-fx-cell type-fx-0">0</td>
                 </tr>
-                <tr>
+                <tr id="Dark">
                     <th>
                         <a class="type-icon-th type-dark">Dark</a>
                     </th>
@@ -666,7 +667,7 @@
                     <td id="Dark → Steel"    class="type-fx-cell type-fx-100"></td>
                     <td id="Dark → Fairy"    class="type-fx-cell type-fx-50">½</td>
                 </tr>
-                <tr>
+                <tr id="Steel">
                     <th>
                         <a class="type-icon-th type-steel">Steel</a>
                     </th>
@@ -689,7 +690,7 @@
                     <td id="Steel → Steel"    class="type-fx-cell type-fx-50">½</td>
                     <td id="Steel → Fairy"    class="type-fx-cell type-fx-200">2</td>
                 </tr>
-                <tr>
+                <tr id="Fairy">
                     <th>
                         <a class="type-icon-th type-fairy">Fairy</a>
                     </th>
@@ -716,7 +717,7 @@
         </table>
         <table class="type-table">
             <thead>
-                <tr>
+                <tr id="typestats-head">
                     <th class="cell-nano">TYPE&nbsp;&#8594;<br/>STAT&nbsp;&#8628;</th>
                     <th>
                         <a class="type-icon-th type-normal">Normal</a>
@@ -775,7 +776,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr id="typestats-offense">
                     <th><a class="type-icon-th type-rock">OFFENSE</a></th>
                     <td id="Offense Normal"   class="type-fx-cell type-fx-50">-25.36</td>
                     <td id="Offense Fire"     class="type-fx-cell type-fx-150">13.12</td>
@@ -796,7 +797,7 @@
                     <td id="Offense Steel"    class="type-fx-cell type-fx-150">2.72</td>
                     <td id="Offense Fairy"    class="type-fx-cell type-fx-150">8.06</td>
                 </tr>
-                <tr>
+                <tr id="typestats-defense">
                     <th><a class="type-icon-th type-steel">DEFENSE</a></th>
                     <td id="Defense Normal"   class="type-fx-cell type-fx-150">4.01</td>
                     <td id="Defense Fire"     class="type-fx-cell type-fx-150">4.01</td>
@@ -817,7 +818,7 @@
                     <td id="Defense Steel"    class="type-fx-cell type-fx-150">21.35</td>
                     <td id="Defense Fairy"    class="type-fx-cell type-fx-150">6.90</td>
                 </tr>
-                <tr>
+                <tr id="typestats-overall">
                     <th><a class="type-icon-th type-ground">OVERALL</a></th>
                     <td id="Overall Normal"   class="type-fx-cell type-fx-50">-11.44</td>
                     <td id="Overall Fire"     class="type-fx-cell type-fx-150">8.81</td>
@@ -862,6 +863,23 @@
                                 , "Fairy"
                                 ];
 
+                var typechartHead = document.getElementById("typechart-head");
+                var typechartBody = document.getElementById("typechart-body");
+                var typestatsHead = document.getElementById("typestats-head");
+
+                var typestatsOffense = document.getElementById("typestats-offense");
+                var typestatsDefense = document.getElementById("typestats-defense");
+                var typestatsOverall = document.getElementById("typestats-overall");
+
+                var typerows = typenames.map(getElementById);
+
+                var newtypes = window.location.search;
+
+                if (newtypes) {
+                    newtypes = newtypes.slice(1).split("&");
+                    newtypes.forEach(addType);
+                }
+
                 var types = typenames.length;
 
                 var size = types * types;
@@ -885,15 +903,143 @@
 
                 window.addEventListener("hashchange", hashUpdate, false);
 
-                function hashUpdate() {
-                    var data = window.location.hash || "#AAAAAA4A696FAAB66EB66AEAE6AAD6A3AA6A9E69D9E6696DAFAAE6EAB995CBDAAE96A5A3BB6B89EAEA9EEAB6A6AAAFA6A869AE59E9B5BAB67BAA62AAAAEB9AAAAAAAAE4AAA6AEB9995BAAAEA79AADAAAF6";
+                document.getElementById("add-type").addEventListener("click", promptAddType, false);
 
+                function promptAddType() {
+                    var message = "Enter the name of your new type:\n"
+                                + "It must be 3 to 8 letters long and\n"
+                                + "may only contain alphabets.";
+
+                    var name = prompt(message).toLowerCase();
+
+                    if (/^[a-z]{3,8}$/.test(name)) {
+                        name = name.charAt(0).toUpperCase() + name.slice(1);
+
+                        if (typenames.indexOf(name) < 0) {
+                            if (newtypes) newtypes.push(name);
+                            else newtypes = [name];
+                            window.location.search = "?" + newtypes.join("&");
+                        } else alert("Type already exists");
+                    } else alert("Invalid name");
+                }
+
+                function hashUpdate() {
+                    var data = window.location.hash || getHash();
                     data = concat(data.slice(1).split("").map(parse));
 
-                    if (data.length === size) {
+                    var length = Math.sqrt(data.length);
+                    var mod = length % 1;
+
+                    if (mod !== 0) {
+                        length -= mod;
+                        data.pop();
+                    }
+
+                    if (length === types) {
                         data.forEach(updateCrumb);
                         updateStats();
-                    }
+                    } else if (length + 1 === types) {
+                        var i = length * length;
+
+                        while (i > 0) {
+                            data.splice(i, 0, 2);
+                            i -= length;
+                        }
+
+                        for (var i = 0; i < types; i++) data.push(2);
+
+                        var hash = "#", index = 0;
+
+                        while (index < size) {
+                            var a = data[index++];
+                            var b = data[index++] || 0;
+                            hash += (a << 2 | b).toString(16);
+                        }
+
+                        window.location.href = hash.toUpperCase();
+                    } else throw new Error("Unexpected error");
+                }
+
+                function getElementById(id) {
+                    return document.getElementById(id);
+                }
+
+                function addType(name) {
+                    var th = document.createElement("th");
+                    var a = document.createElement("a");
+
+                    a.className = "type-abbr";
+                    a.innerHTML = name.slice(0, 3);
+
+                    th.appendChild(a);
+                    typechartHead.appendChild(th);
+
+                    typerows.forEach(function (typerow) {
+                        var td = document.createElement("td");
+
+                        td.id = typerow.id + " → " + name;
+                        td.className = "type-fx-cell type-fx-100";
+
+                        typerow.appendChild(td);
+                    });
+
+                    var tr = document.createElement("tr");
+                    var th = document.createElement("th");
+                    var a = document.createElement("a");
+
+                    a.className = "type-icon-th";
+                    a.innerHTML = tr.id = name;
+
+                    th.appendChild(a);
+                    tr.appendChild(th);
+
+                    typenames.push(name);
+
+                    typenames.forEach(function (typename) {
+                        var td = document.createElement("td");
+
+                        td.id = name + " → " + typename;
+                        td.className = "type-fx-cell type-fx-100";
+
+                        tr.appendChild(td);
+                    });
+
+                    typechartBody.appendChild(tr);
+
+                    typerows.push(tr);
+
+                    var th = document.createElement("th");
+                    var a = document.createElement("a");
+
+                    a.className = "type-icon-th";
+                    a.innerHTML = tr.id = name;
+
+                    th.appendChild(a);
+                    typestatsHead.appendChild(th);
+
+                    var td = document.createElement("td");
+
+                    td.id = "Offense " + name;
+                    td.className = "type-fx-cell type-fx-0";
+                    td.innerHTML = "0.00";
+
+                    typestatsOffense.appendChild(td);
+
+                    var td = document.createElement("td");
+
+                    td.id = "Defense " + name;
+                    td.className = "type-fx-cell type-fx-0";
+                    td.innerHTML = "0.00";
+
+                    typestatsDefense.appendChild(td);
+
+                    var td = document.createElement("td");
+
+                    td.id = "Overall " + name;
+                    td.className = "type-fx-cell type-fx-0";
+                    td.innerHTML = "0.00";
+
+                    typestatsOverall.appendChild(td);
                 }
 
                 function getStats(name) {
@@ -1002,6 +1148,10 @@
                         updateValue(typestat.overall, 100 * overallValue);
                     }
 
+                    window.location.hash = getHash();
+                }
+
+                function getHash() {
                     var data = "#", index = 0;
 
                     while (index < size) {
@@ -1010,7 +1160,7 @@
                         data += (a << 2 | b).toString(16);
                     }
 
-                    window.location.hash = data.toUpperCase();
+                    return data.toUpperCase();
                 }
 
                 function getValue(crumb) {
@@ -1023,12 +1173,16 @@
                 }
 
                 function getIndex(crumb) {
-                    switch (crumb.innerHTML) {
-                    case "0": return 0;
-                    case "½": return 1;
-                    case "":  return 2;
-                    case "2": return 3;
+                    if (crumb) {
+                        switch (crumb.innerHTML) {
+                        case "0": return 0;
+                        case "½": return 1;
+                        case "":  return 2;
+                        case "2": return 3;
+                        }
                     }
+
+                    return 0;
                 }
 
                 function updateValue(stat, value) {

@@ -882,6 +882,8 @@
 
                 var types = typenames.length;
 
+                var constant = types + 1;
+
                 var size = types * types;
 
                 var crumbs = new Array(size);
@@ -1086,31 +1088,22 @@
                 function updateStats() {
                     var typechart = crumbs.map(getValue);
 
-                    var offense = new Array(types);
-                    var defense = new Array(types);
-
-                    for (var i = 0; i < types; i++) offense[i] = 0;
+                    var result = new Array(types);
+                    var attack = new Array(types);
 
                     for (var i = 0; i < types; i++) {
-                        var sum = 2 * types;
+                        var sigmaSquare = 0;
+                        var sigmaAttack = 0;
 
                         for (var j = 0; j < types; j++) {
-                            var value = typechart[i + types * j];
-                            offense[j] += value;
-                            sum -= value;
+                            var offense  = typechart[i * types + j];
+                            sigmaSquare += offense * offense;
+                            sigmaAttack += offense;
                         }
 
-                        defense[i] = sum;
-
-                        for (var j = i + 1; j < types; j++) {
-                            for (var k = 0; k < types; k++) {
-                                var type = types * k;
-                                offense[k] += typechart[i + type] * typechart[j + type];
-                            }
-                        }
+                        result[i] = sigmaAttack * (sigmaAttack + 2) - sigmaSquare;
+                        attack[i] = sigmaAttack;
                     }
-
-                    var constant = (types + 1) / 2;
 
                     var average = {
                         offense: 0,
@@ -1121,9 +1114,19 @@
                     var stats = new Array(types);
 
                     for (var i = 0; i < types; i++) {
-                        var offenseValue = offense[i];
-                        var defenseValue = defense[i];
-                        var overallValue = offenseValue + constant * defenseValue;
+                        var sigmaDefense = 0;
+
+                        for (var j = 0; j < types; j++) {
+                            var defenses  = typechart[i + types * j];
+                            sigmaDefense += defenses * (attack[j] - defenses + 1);
+                        }
+
+                        var offense = result[i];
+                        var overall = Math.sqrt(types * offense / sigmaDefense / constant);
+
+                        var offenseValue = offense / types / constant;
+                        var defenseValue = size / sigmaDefense;
+                        var overallValue = overall;
 
                         stats[i] = {
                             offense: types * offenseValue,
@@ -1139,9 +1142,9 @@
                     for (var i = 0; i < types; i++) {
                         var typestat = typestats[i];
 
-                        var offenseValue = stats[i].offense / average.offense - 1;
-                        var defenseValue = stats[i].defense / average.defense - 1;
-                        var overallValue = stats[i].overall / average.overall - 1;
+                        var offenseValue = Math.log(stats[i].offense / average.offense);
+                        var defenseValue = Math.log(stats[i].defense / average.defense);
+                        var overallValue = Math.log(stats[i].overall / average.overall);
 
                         updateValue(typestat.offense, 100 * offenseValue);
                         updateValue(typestat.defense, 100 * defenseValue);
@@ -1186,9 +1189,11 @@
                 }
 
                 function updateValue(stat, value) {
-                    stat.className = value < 0 ? "type-fx-cell type-fx-50" :
-                                     value > 0 ? "type-fx-cell type-fx-150" :
-                                                 "type-fx-cell type-fx-0";
+                    stat.className = value <= -0.01 ? "type-fx-cell type-fx-50" :
+                                     value >=  0.01 ? "type-fx-cell type-fx-150" :
+                                                      "type-fx-cell type-fx-0";
+
+                    if (stat.className === "type-fx-cell type-fx-0") value = 0;
 
                     stat.innerHTML = value.toFixed(2);
                 }

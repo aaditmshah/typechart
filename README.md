@@ -2,6 +2,15 @@
 
 An interactive [pokémon type chart](https://cdn.rawgit.com/aaditmshah/typechart/master/index.html). Click on the table cells to change their values. See how balanced your custom pokémon type chart is. Share the URL of your custom pokémon type chart with others.
 
+# Preset Type Charts #
+
+1. [Gen 6 type chart](https://cdn.rawgit.com/aaditmshah/typechart/master/index.html)
+2. [Gen 2-5 type chart](https://cdn.rawgit.com/aaditmshah/typechart/master/old.html)
+3. [Gen 1 type chart](https://cdn.rawgit.com/aaditmshah/typechart/master/original.html)
+4. [Gen 6 blank type chart](https://cdn.rawgit.com/aaditmshah/typechart/master/index.html#AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)
+5. [Gen 2-5 blank type chart](https://cdn.rawgit.com/aaditmshah/typechart/master/old.html#AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)
+6. [Gen 1 blank type chart](https://cdn.rawgit.com/aaditmshah/typechart/master/original.html#AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)
+
 # Design #
 
 The design of the pokémon type chart was copied from [pokemondb.net](http://pokemondb.net/type). Unfortunately, according to the author I'm [not allowed to copy](http://pokemondb.net/about) his design. If he'd let me use his design or if somebody would help me redesign the type chart then I'd greatly appreciate it.

@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Temtem Type Chart</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
+        <style>
+            html {
+                color: #FFFFFF;
+                background-color: #292929;
+                font-family: "Lato", "Ubuntu", "Trebuchet MS", "Helvetica", "Arial", "FreeSans", sans-serif;
+                font-size: 15px;
+                line-height: 1.5;
+            }
+
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+                margin: 0 auto 15px;
+                padding: 0;
+            }
+
+            .type-table th {
+                border: 2px solid #292929;
+                font-weight: normal;
+                padding: 0;
+            }
+
+            .type-table td {
+                border: 2px solid #292929;
+                padding: 0;
+            }
+
+            .type-table th a, .type-table td {
+                border-radius: 6px;
+            }
+
+            .cell-nano {
+                font-size: 9px;
+            }
+
+            .type-abbr {
+                background: #CCCCCC;
+                color: #292929;
+                display: inline-block;
+                font-size: 10px;
+                font-weight: bold;
+                height: 32px;
+                line-height: 32px;
+                text-align: center;
+                text-transform: uppercase;
+                width: 32px;
+            }
+
+            .type-icon-th {
+                background: #CCCCCC;
+                color: #292929;
+                float: left;
+                font-size: 10px;
+                font-weight: bold;
+                height: 32px;
+                line-height: 32px;
+                text-align: center;
+                text-transform: uppercase;
+                width: 54px;
+            }
+
+            .type-icon-th:first-child {
+                margin-left: 0;
+            }
+
+            .type-fx-cell {
+                color: #292929;
+                font-size: 12px;
+                font-weight: bold;
+                height: 32px;
+                line-height: 32px;
+                text-align: center;
+                width: 32px;
+            }
+
+            .type-fx-0 {
+                background-color: #4A4A4A;
+            }
+
+            .type-fx-50 {
+                background-color: #F2665C;
+            }
+
+            .type-fx-75 {
+                background-color: #F2665C;
+                font-size: 14px;
+            }
+
+            .type-fx-100 {
+                background-color: #FFFFFF;
+            }
+
+            .type-fx-150 {
+                background-color: #B1D490;
+                font-size: 14px;
+            }
+
+            .type-fx-200 {
+                background-color: #B1D490;
+            }
+
+            .type-neutral {
+                background: #A1ACAD url("temtem/neutral.png") center no-repeat;
+            }
+
+            .type-fire {
+                background: #FA8A6E url("temtem/fire.png") center no-repeat;
+            }
+
+            .type-water {
+                background: #7DDBF0 url("temtem/water.png") center no-repeat;
+            }
+
+            .type-nature {
+                background: #9FE697 url("temtem/nature.png") center no-repeat;
+            }
+
+            .type-electric {
+                background: #F0DB7D url("temtem/electric.png") center no-repeat;
+            }
+
+            .type-earth {
+                background: #BD896D url("temtem/earth.png") center no-repeat;
+            }
+
+            .type-mental {
+                background: #EB9DDA url("temtem/mental.png") center no-repeat;
+            }
+
+            .type-wind {
+                background: #7CDED9 url("temtem/wind.png") center no-repeat;
+            }
+
+            .type-digital {
+                background: #81A3A6 url("temtem/digital.png") center no-repeat;
+            }
+
+            .type-melee {
+                background: #FFA463 url("temtem/melee.png") center no-repeat;
+            }
+
+            .type-crystal {
+                background: #E85671 url("temtem/crystal.png") center no-repeat;
+            }
+
+            .type-toxic {
+                background: #4A4A4A url("temtem/toxic.png") center no-repeat;
+            }
+
+            .type-offense {
+                background: #81A3A6;
+            }
+
+            .type-defense {
+                background: #4A4A4A;
+            }
+
+            .type-overall {
+                background: #F0DB7D;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="type-table">
+            <thead>
+                <tr id="typechart-head">
+                    <th class="cell-nano">DEFEND&nbsp;&#8594;<br/>ATTACK&nbsp;&#8628;</th>
+                    <th>
+                        <a class="type-abbr type-neutral">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-abbr type-fire">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-abbr type-water">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-abbr type-nature">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-abbr type-electric">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-abbr type-earth">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-abbr type-mental">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-abbr type-wind">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-abbr type-digital">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-abbr type-melee">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-abbr type-crystal">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-abbr type-toxic">&nbsp;</a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="typechart-body">
+                <tr id="Neutral">
+                    <th>
+                        <a class="type-icon-th type-neutral">&nbsp;</a>
+                    </th>
+                    <td id="Neutral → Neutral"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Neutral → Fire"     class="type-fx-cell type-fx-100"></td>
+                    <td id="Neutral → Water"    class="type-fx-cell type-fx-100"></td>
+                    <td id="Neutral → Nature" class="type-fx-cell type-fx-100"></td>
+                    <td id="Neutral → Electric"    class="type-fx-cell type-fx-100"></td>
+                    <td id="Neutral → Earth"      class="type-fx-cell type-fx-100"></td>
+                    <td id="Neutral → Mental" class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Neutral → Wind"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Neutral → Digital"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Neutral → Melee"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Neutral → Crystal"  class="type-fx-cell type-fx-100"></td>
+                    <td id="Neutral → Toxic"      class="type-fx-cell type-fx-100"></td>
+                </tr>
+                <tr id="Fire">
+                    <th>
+                        <a class="type-icon-th type-fire">&nbsp;</a>
+                    </th>
+                    <td id="Fire → Neutral"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Fire → Fire"     class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Fire → Water"    class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Fire → Nature" class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Fire → Electric"    class="type-fx-cell type-fx-100"></td>
+                    <td id="Fire → Earth"      class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Fire → Mental" class="type-fx-cell type-fx-100"></td>
+                    <td id="Fire → Wind"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Fire → Digital"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Fire → Melee"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Fire → Crystal"  class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Fire → Toxic"      class="type-fx-cell type-fx-100"></td>
+                </tr>
+                <tr id="Water">
+                    <th>
+                        <a class="type-icon-th type-water">&nbsp;</a>
+                    </th>
+                    <td id="Water → Neutral"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Water → Fire"     class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Water → Water"    class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Water → Nature" class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Water → Electric"    class="type-fx-cell type-fx-100"></td>
+                    <td id="Water → Earth"      class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Water → Mental" class="type-fx-cell type-fx-100"></td>
+                    <td id="Water → Wind"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Water → Digital"   class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Water → Melee"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Water → Crystal"  class="type-fx-cell type-fx-100"></td>
+                    <td id="Water → Toxic"      class="type-fx-cell type-fx-50">.5x</td>
+                </tr>
+                <tr id="Nature">
+                    <th>
+                        <a class="type-icon-th type-nature">&nbsp;</a>
+                    </th>
+                    <td id="Nature → Neutral"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Nature → Fire"     class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Nature → Water"    class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Nature → Nature" class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Nature → Electric"    class="type-fx-cell type-fx-100"></td>
+                    <td id="Nature → Earth"      class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Nature → Mental" class="type-fx-cell type-fx-100"></td>
+                    <td id="Nature → Wind"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Nature → Digital"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Nature → Melee"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Nature → Crystal"  class="type-fx-cell type-fx-100"></td>
+                    <td id="Nature → Toxic"      class="type-fx-cell type-fx-50">.5x</td>
+                </tr>
+                <tr id="Electric">
+                    <th>
+                        <a class="type-icon-th type-electric">&nbsp;</a>
+                    </th>
+                    <td id="Electric → Neutral"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Electric → Fire"     class="type-fx-cell type-fx-100"></td>
+                    <td id="Electric → Water"    class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Electric → Nature" class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Electric → Electric"    class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Electric → Earth"      class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Electric → Mental" class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Electric → Wind"   class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Electric → Digital"   class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Electric → Melee"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Electric → Crystal"  class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Electric → Toxic"      class="type-fx-cell type-fx-100"></td>
+                </tr>
+                <tr id="Earth">
+                    <th>
+                        <a class="type-icon-th type-earth">&nbsp;</a>
+                    </th>
+                    <td id="Earth → Neutral"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Earth → Fire"     class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Earth → Water"    class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Earth → Nature" class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Earth → Electric"    class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Earth → Earth"      class="type-fx-cell type-fx-100"></td>
+                    <td id="Earth → Mental" class="type-fx-cell type-fx-100"></td>
+                    <td id="Earth → Wind"   class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Earth → Digital"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Earth → Melee"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Earth → Crystal"  class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Earth → Toxic"      class="type-fx-cell type-fx-100"></td>
+                </tr>
+                <tr id="Mental">
+                    <th>
+                        <a class="type-icon-th type-mental">&nbsp;</a>
+                    </th>
+                    <td id="Mental → Neutral"   class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Mental → Fire"     class="type-fx-cell type-fx-100"></td>
+                    <td id="Mental → Water"    class="type-fx-cell type-fx-100"></td>
+                    <td id="Mental → Nature" class="type-fx-cell type-fx-100"></td>
+                    <td id="Mental → Electric"    class="type-fx-cell type-fx-100"></td>
+                    <td id="Mental → Earth"      class="type-fx-cell type-fx-100"></td>
+                    <td id="Mental → Mental" class="type-fx-cell type-fx-100"></td>
+                    <td id="Mental → Wind"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Mental → Digital"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Mental → Melee"   class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Mental → Crystal"  class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Mental → Toxic"      class="type-fx-cell type-fx-100"></td>
+                </tr>
+                <tr id="Wind">
+                    <th>
+                        <a class="type-icon-th type-wind">&nbsp;</a>
+                    </th>
+                    <td id="Wind → Neutral"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Wind → Fire"     class="type-fx-cell type-fx-100"></td>
+                    <td id="Wind → Water"    class="type-fx-cell type-fx-100"></td>
+                    <td id="Wind → Nature" class="type-fx-cell type-fx-100"></td>
+                    <td id="Wind → Electric"    class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Wind → Earth"      class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Wind → Mental" class="type-fx-cell type-fx-100"></td>
+                    <td id="Wind → Wind"   class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Wind → Digital"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Wind → Melee"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Wind → Crystal"  class="type-fx-cell type-fx-100"></td>
+                    <td id="Wind → Toxic"      class="type-fx-cell type-fx-200">2x</td>
+                </tr>
+                <tr id="Digital">
+                    <th>
+                        <a class="type-icon-th type-digital">&nbsp;</a>
+                    </th>
+                    <td id="Digital → Neutral"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Digital → Fire"     class="type-fx-cell type-fx-100"></td>
+                    <td id="Digital → Water"    class="type-fx-cell type-fx-100"></td>
+                    <td id="Digital → Nature" class="type-fx-cell type-fx-100"></td>
+                    <td id="Digital → Electric"    class="type-fx-cell type-fx-100"></td>
+                    <td id="Digital → Earth"      class="type-fx-cell type-fx-100"></td>
+                    <td id="Digital → Mental" class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Digital → Wind"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Digital → Digital"   class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Digital → Melee"   class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Digital → Crystal"  class="type-fx-cell type-fx-100"></td>
+                    <td id="Digital → Toxic"      class="type-fx-cell type-fx-100"></td>
+                </tr>
+                <tr id="Melee">
+                    <th>
+                        <a class="type-icon-th type-melee">&nbsp;</a>
+                    </th>
+                    <td id="Melee → Neutral"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Melee → Fire"     class="type-fx-cell type-fx-100"></td>
+                    <td id="Melee → Water"    class="type-fx-cell type-fx-100"></td>
+                    <td id="Melee → Nature" class="type-fx-cell type-fx-100"></td>
+                    <td id="Melee → Electric"    class="type-fx-cell type-fx-100"></td>
+                    <td id="Melee → Earth"      class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Melee → Mental" class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Melee → Wind"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Melee → Digital"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Melee → Melee"   class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Melee → Crystal"  class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Melee → Toxic"      class="type-fx-cell type-fx-100"></td>
+                </tr>
+                <tr id="Crystal">
+                    <th>
+                        <a class="type-icon-th type-crystal">&nbsp;</a>
+                    </th>
+                    <td id="Crystal → Neutral"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Crystal → Fire"     class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Crystal → Water"    class="type-fx-cell type-fx-100"></td>
+                    <td id="Crystal → Nature" class="type-fx-cell type-fx-100"></td>
+                    <td id="Crystal → Electric"    class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Crystal → Earth"      class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Crystal → Mental" class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Crystal → Wind"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Crystal → Digital"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Crystal → Melee"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Crystal → Crystal"  class="type-fx-cell type-fx-100"></td>
+                    <td id="Crystal → Toxic"      class="type-fx-cell type-fx-100"></td>
+                </tr>
+                <tr id="Toxic">
+                    <th>
+                        <a class="type-icon-th type-toxic">&nbsp;</a>
+                    </th>
+                    <td id="Toxic → Neutral"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Toxic → Fire"     class="type-fx-cell type-fx-100"></td>
+                    <td id="Toxic → Water"    class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Toxic → Nature" class="type-fx-cell type-fx-200">2x</td>
+                    <td id="Toxic → Electric"    class="type-fx-cell type-fx-100"></td>
+                    <td id="Toxic → Earth"      class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Toxic → Mental" class="type-fx-cell type-fx-100"></td>
+                    <td id="Toxic → Wind"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Toxic → Digital"   class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Toxic → Melee"   class="type-fx-cell type-fx-100"></td>
+                    <td id="Toxic → Crystal"  class="type-fx-cell type-fx-50">.5x</td>
+                    <td id="Toxic → Toxic"      class="type-fx-cell type-fx-50">.5x</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="type-table">
+            <thead>
+                <tr id="typestats-head">
+                    <th class="cell-nano">TYPE&nbsp;&#8594;<br/>STAT&nbsp;&#8628;</th>
+                    <th>
+                        <a class="type-icon-th type-neutral">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-icon-th type-fire">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-icon-th type-water">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-icon-th type-nature">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-icon-th type-electric">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-icon-th type-earth">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-icon-th type-mental">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-icon-th type-wind">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-icon-th type-digital">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-icon-th type-melee">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-icon-th type-crystal">&nbsp;</a>
+                    </th>
+                    <th>
+                        <a class="type-icon-th type-toxic">&nbsp;</a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="typestats-offense">
+                    <th><a class="type-icon-th type-offense">OFFENSE</a></th>
+                    <td id="Offense Neutral"   class="type-fx-cell type-fx-75">-22.94</td>
+                    <td id="Offense Fire"     class="type-fx-cell type-fx-75">-9.02</td>
+                    <td id="Offense Water"    class="type-fx-cell type-fx-150">5.05</td>
+                    <td id="Offense Nature" class="type-fx-cell type-fx-75">--9.02</td>
+                    <td id="Offense Electric"    class="type-fx-cell type-fx-150">11.40</td>
+                    <td id="Offense Earth"      class="type-fx-cell type-fx-150">5.05</td>
+                    <td id="Offense Mental" class="type-fx-cell type-fx-150">5.83</td>
+                    <td id="Offense Wind"   class="type-fx-cell type-fx-75">-1.46</td>
+                    <td id="Offense Digital"   class="type-fx-cell type-fx-150">25.61</td>
+                    <td id="Offense Melee"   class="type-fx-cell type-fx-75">-1.46</td>
+                    <td id="Offense Crystal"  class="type-fx-cell type-fx-75">-1.46</td>
+                    <td id="Offense Toxic"      class="type-fx-cell type-fx-75">-16.87</td>
+                </tr>
+                <tr id="typestats-defense">
+                    <th><a class="type-icon-th type-defense">DEFENSE</a></th>
+                    <td id="Defense Neutral"   class="type-fx-cell type-fx-75">-0.71</td>
+                    <td id="Defense Fire"     class="type-fx-cell type-fx-150">3.37</td>
+                    <td id="Defense Water"    class="type-fx-cell type-fx-75">-1.89</td>
+                    <td id="Defense Nature" class="type-fx-cell type-fx-150">9.76</td>
+                    <td id="Defense Electric"    class="type-fx-cell type-fx-150">0.48</td>
+                    <td id="Defense Earth"      class="type-fx-cell type-fx-75">-5.21</td>
+                    <td id="Defense Mental" class="type-fx-cell type-fx-75">-8.01</td>
+                    <td id="Defense Wind"   class="type-fx-cell type-fx-150">6.83</td>
+                    <td id="Defense Digital"   class="type-fx-cell type-fx-75">-11.53</td>
+                    <td id="Defense Melee"   class="type-fx-cell type-fx-75">-4.64</td>
+                    <td id="Defense Crystal"  class="type-fx-cell type-fx-75">-2.19</td>
+                    <td id="Defense Toxic"      class="type-fx-cell type-fx-150">11.08</td>
+                </tr>
+                <tr id="typestats-overall">
+                    <th><a class="type-icon-th type-overall">OVERALL</a></th>
+                    <td id="Overall Neutral"   class="type-fx-cell type-fx-75">-11.44</td>
+                    <td id="Overall Fire"     class="type-fx-cell type-fx-75">-2.43</td>
+                    <td id="Overall Water"    class="type-fx-cell type-fx-150">1.97</td>
+                    <td id="Overall Nature" class="type-fx-cell type-fx-150">0.76</td>
+                    <td id="Overall Electric"    class="type-fx-cell type-fx-150">6.33</td>
+                    <td id="Overall Earth"      class="type-fx-cell type-fx-150">0.31</td>
+                    <td id="Overall Mental" class="type-fx-cell type-fx-75">-0.70</td>
+                    <td id="Overall Wind"   class="type-fx-cell type-fx-150">3.08</td>
+                    <td id="Overall Digital"   class="type-fx-cell type-fx-150">7.43</td>
+                    <td id="Overall Melee"   class="type-fx-cell type-fx-75">-2.66</td>
+                    <td id="Overall Crystal"  class="type-fx-cell type-fx-75">-1.43</td>
+                    <td id="Overall Toxic"      class="type-fx-cell type-fx-75">-2.51</td>
+                </tr>
+            </tbody>
+        </table>
+        <script>
+            window.addEventListener("DOMContentLoaded", function () {
+                var typenames = [ "Neutral"
+                                , "Fire"
+                                , "Water"
+                                , "Nature"
+                                , "Electric"
+                                , "Earth"
+                                , "Mental"
+                                , "Wind"
+                                , "Digital"
+                                , "Melee"
+                                , "Crystal"
+                                , "Toxic"
+                                ];
+
+                var typechartHead = document.getElementById("typechart-head");
+                var typechartBody = document.getElementById("typechart-body");
+                var typestatsHead = document.getElementById("typestats-head");
+
+                var typestatsOffense = document.getElementById("typestats-offense");
+                var typestatsDefense = document.getElementById("typestats-defense");
+                var typestatsOverall = document.getElementById("typestats-overall");
+
+                var typerows = typenames.map(getElementById);
+
+                var types = typenames.length;
+
+                var constant = types + 1;
+
+                var size = types * types;
+
+                var crumbs = new Array(size);
+
+                var index = 0;
+
+                for (var i = 0; i < types; i++) {
+                    for (var j = 0; j < types; j++) {
+                        var id = typenames[i] + " → " + typenames[j];
+                        crumbs[index++] = document.getElementById(id);
+                    }
+                }
+
+                var typestats = typenames.map(getStats);
+
+                hashUpdate();
+
+                crumbs.forEach(listen);
+
+                window.addEventListener("hashchange", hashUpdate, false);
+
+                function hashUpdate() {
+                    var data = window.location.hash || getHash();
+                    data = concat(data.slice(1).split("").map(parse));
+
+                    var length = Math.sqrt(data.length);
+                    var mod = length % 1;
+
+                    if (mod !== 0) {
+                        length -= mod;
+                        data.pop();
+                    }
+
+                    if (length === types) {
+                        data.forEach(updateCrumb);
+                        updateStats();
+                    } else if (length + 1 === types) {
+                        var i = length * length;
+
+                        while (i > 0) {
+                            data.splice(i, 0, 2);
+                            i -= length;
+                        }
+
+                        for (var i = 0; i < types; i++) data.push(2);
+
+                        var hash = "#", index = 0;
+
+                        while (index < size) {
+                            var a = data[index++];
+                            var b = data[index++] || 0;
+                            hash += (a << 2 | b).toString(16);
+                        }
+
+                        window.location.href = hash.toUpperCase();
+                    } else throw new Error("Unexpected error");
+                }
+
+                function getElementById(id) {
+                    return document.getElementById(id);
+                }
+
+                function getStats(name) {
+                    return {
+                        offense: document.getElementById("Offense " + name),
+                        defense: document.getElementById("Defense " + name),
+                        overall: document.getElementById("Overall " + name)
+                    };
+                }
+
+                function parse(x) {
+                    var y = parseInt(x, 16);
+                    if (isNaN(y)) throw new Error("Invalid data");
+                    return [y >>> 2, y & 3];
+                }
+
+                function concat(xs) {
+                    return Array.prototype.concat.apply(Array.prototype, xs);
+                }
+
+                function updateCrumb(value, index) {
+                    var crumb = crumbs[index];
+
+                    switch (value) {
+                    case 1:
+                        crumb.className = "type-fx-cell type-fx-50";
+                        crumb.innerHTML = ".5x";
+                        break;
+                    case 2:
+                        crumb.className = "type-fx-cell type-fx-100";
+                        crumb.innerHTML = "";
+                        break;
+                    case 3:
+                        crumb.className = "type-fx-cell type-fx-200";
+                        crumb.innerHTML = "2x";
+                        break;
+                    }
+                }
+
+                function updateStats() {
+                    var typechart = crumbs.map(getValue);
+
+                    var result = new Array(types);
+                    var attack = new Array(types);
+
+                    for (var i = 0; i < types; i++) {
+                        var sigmaSquare = 0;
+                        var sigmaAttack = 0;
+
+                        for (var j = 0; j < types; j++) {
+                            var offense  = typechart[i * types + j];
+                            sigmaSquare += offense * offense;
+                            sigmaAttack += offense;
+                        }
+
+                        result[i] = sigmaAttack * (sigmaAttack + 2) - sigmaSquare;
+                        attack[i] = sigmaAttack;
+                    }
+
+                    var average = {
+                        offense: 0,
+                        defense: 0,
+                        overall: 0
+                    };
+
+                    var stats = new Array(types);
+
+                    for (var i = 0; i < types; i++) {
+                        var sigmaDefense = 0;
+
+                        for (var j = 0; j < types; j++) {
+                            var defenses  = typechart[i + types * j];
+                            sigmaDefense += defenses * (attack[j] - defenses + 1);
+                        }
+
+                        var offense = result[i];
+                        var overall = Math.sqrt(types * offense / sigmaDefense / constant);
+
+                        var offenseValue = offense / types / constant;
+                        var defenseValue = size / sigmaDefense;
+                        var overallValue = overall;
+
+                        stats[i] = {
+                            offense: types * offenseValue,
+                            defense: types * defenseValue,
+                            overall: types * overallValue
+                        };
+
+                        average.offense += offenseValue;
+                        average.defense += defenseValue;
+                        average.overall += overallValue;
+                    }
+
+                    for (var i = 0; i < types; i++) {
+                        var typestat = typestats[i];
+
+                        var offenseValue = Math.log(stats[i].offense / average.offense);
+                        var defenseValue = Math.log(stats[i].defense / average.defense);
+                        var overallValue = Math.log(stats[i].overall / average.overall);
+
+                        updateValue(typestat.offense, 100 * offenseValue);
+                        updateValue(typestat.defense, 100 * defenseValue);
+                        updateValue(typestat.overall, 100 * overallValue);
+                    }
+
+                    window.location.hash = getHash();
+                }
+
+                function getHash() {
+                    var data = "#", index = 0;
+
+                    while (index < size) {
+                        var a = getIndex(crumbs[index++]);
+                        var b = getIndex(crumbs[index++]);
+                        data += (a << 2 | b).toString(16);
+                    }
+
+                    return data.toUpperCase();
+                }
+
+                function getValue(crumb) {
+                    switch (crumb.innerHTML) {
+                    case ".5x": return 1/2;
+                    case "":  return 1/1;
+                    case "2x": return 2/1;
+                    }
+                }
+
+                function getIndex(crumb) {
+                    if (crumb) {
+                        switch (crumb.innerHTML) {
+                        case ".5x": return 1;
+                        case "":  return 2;
+                        case "2x": return 3;
+                        }
+                    }
+
+                    return 0;
+                }
+
+                function updateValue(stat, value) {
+                    stat.className = value <= -0.01 ? "type-fx-cell type-fx-75" :
+                                     value >=  0.01 ? "type-fx-cell type-fx-150" :
+                                                      "type-fx-cell type-fx-0";
+
+                    if (stat.className === "type-fx-cell type-fx-0") value = 0;
+
+                    stat.innerHTML = value.toFixed(2);
+                }
+
+                function listen(crumb) {
+                    crumb.style.cursor = "pointer";
+
+                    crumb.addEventListener("mousedown", function (event) {
+                        event.preventDefault();
+
+                        switch (crumb.innerHTML) {
+                        case ".5x":
+                            crumb.className = "type-fx-cell type-fx-100";
+                            crumb.innerHTML = "";
+                            break;
+                        case "":
+                            crumb.className = "type-fx-cell type-fx-200";
+                            crumb.innerHTML = "2x";
+                            break;
+                        case "2x":
+                            crumb.className = "type-fx-cell type-fx-50";
+                            crumb.innerHTML = ".5x";
+                            break;
+                        }
+
+                        updateStats();
+                    }, false);
+                }
+            }, false);
+        </script>
+    </body>
+</html>

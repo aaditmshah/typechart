@@ -1,17 +1,17 @@
 # Pokémon Type Chart #
 
-An interactive [pokémon type chart](https://cdn.rawgit.com/aaditmshah/typechart/master/index.html). Click on the table cells to change their values. See how balanced your custom pokémon type chart is. Share the URL of your custom pokémon type chart with others.
+An interactive [pokémon type chart](https://aaditmshah.github.io/typechart). Click on the table cells to change their values. See how balanced your custom pokémon type chart is. Share the URL of your custom pokémon type chart with others.
 
 # Preset Type Charts #
 
-1. [Temtem type chart](https://cdn.rawgit.com/aaditmshah/typechart/master/temtem.html)
-2. [Gen 6 type chart](https://cdn.rawgit.com/aaditmshah/typechart/master/index.html)
-3. [Gen 2-5 type chart](https://cdn.rawgit.com/aaditmshah/typechart/master/old.html)
-4. [Gen 1 type chart](https://cdn.rawgit.com/aaditmshah/typechart/master/original.html)
-5. [Temtem blank type chart](https://cdn.rawgit.com/aaditmshah/typechart/master/temtem.html#AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)
-6. [Gen 6 blank type chart](https://cdn.rawgit.com/aaditmshah/typechart/master/index.html#AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)
-7. [Gen 2-5 blank type chart](https://cdn.rawgit.com/aaditmshah/typechart/master/old.html#AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)
-8. [Gen 1 blank type chart](https://cdn.rawgit.com/aaditmshah/typechart/master/original.html#AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)
+1. [Temtem type chart](https://aaditmshah.github.io/typechart/temtem)
+2. [Gen 6 type chart](https://aaditmshah.github.io/typechart)
+3. [Gen 2-5 type chart](https://aaditmshah.github.io/typechart/old)
+4. [Gen 1 type chart](https://aaditmshah.github.io/typechart/original)
+5. [Temtem blank type chart](https://aaditmshah.github.io/typechart/temtem#AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)
+6. [Gen 6 blank type chart](https://aaditmshah.github.io/typechart#AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)
+7. [Gen 2-5 blank type chart](https://aaditmshah.github.io/typechart/old#AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)
+8. [Gen 1 blank type chart](https://aaditmshah.github.io/typechart/original#AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)
 
 # Design #
 
